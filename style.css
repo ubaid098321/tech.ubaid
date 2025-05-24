@@ -1,18 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f0c29);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #000000, #0f0c29, #24243e, #000000);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
 }
 
 @keyframes gradientBG {
@@ -20,87 +13,58 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-}
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px 20px;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
+.profile-photo {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-  border: 3px solid #1a1a1a;
+  border: 3px solid red;
+  margin-bottom: 20px;
 }
 
 .animated-heading {
-  font-weight: 700;
   font-size: 2.5rem;
-  color: #222;
-  animation: fadeInDown 1.5s ease forwards;
+  color: #fff;
+  text-shadow: 0 0 15px red;
 }
 
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.custom-nav {
+.navbar {
   display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 20px auto;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #111;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
-.nav-item {
-  padding: 10px 0;
-  position: relative;
-  cursor: pointer;
-  transition: color 0.3s ease;
+.navbar a {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px black;
 }
 
-.nav-item:hover {
-  color: #007BFF;
-}
-
-.underline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #007BFF;
-  transition: width 0.4s ease;
-}
-
-.nav-item:hover .underline {
-  width: 100%;
+.navbar a:hover {
+  background-color: darkred;
 }
 
 main {
-  max-width: 800px;
-  margin: 40px auto 20px;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 30px;
 }
 
 footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 0.9rem;
-  color: #777;
 }
