@@ -7,27 +7,51 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Basic styling for demo */
+    /* Navbar style */
     .navbar {
       background-color: #222;
       padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
     }
     .navbar a {
       color: white;
-      margin: 0 15px;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: 600;
+      font-size: 18px;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
+    .navbar a:hover {
+      background-color: #444;
+    }
+
+    /* Secondary nav styling as vertical boxed links */
     .secondary-nav {
-      margin-top: 10px;
-      padding: 10px;
-      background-color: #f4f4f4;
+      margin: 20px auto;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .secondary-nav a {
-      display: inline-block;
-      margin-right: 15px;
-      color: #333;
-      text-decoration: underline;
+      background-color: #004d00; /* dark green box */
+      color: #d0f0c0; /* light green text */
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      text-align: center;
+    }
+    .secondary-nav a:hover {
+      background-color: #002600;
+      color: #a6d785;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
   </style>
 </head>
@@ -46,10 +70,10 @@
     <a href="about.html">About</a>
   </div>
 
-  <!-- Secondary navigation for course pages -->
+  <!-- Secondary navigation for course pages as vertical boxed links -->
   <div class="secondary-nav">
-    <a href="page1-intro.html">Ethical Hacking Intro</a>
-    <a href="page2-lab-setup.html">Lab Setup</a>
+    <a href="page1-intro.html">1. Ethical Hacking Intro</a>
+    <a href="page2-lab-setup.html">2. Lab Setup</a>
   </div>
 
   <main>
