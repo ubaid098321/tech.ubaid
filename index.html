@@ -59,26 +59,9 @@
       transform: scale(1.1);
     }
 
-    .video-section {
-      text-align: center;
-      padding: 30px;
-    }
-
-    .custom-video {
-      width: 300px;
-      margin: 10px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,255,255,0.4);
-    }
-
-    .contact-section {
-      text-align: center;
-      padding: 40px;
-    }
-
     .secondary-nav {
       max-width: 700px;
-      margin: 0 auto;
+      margin: 40px auto 0;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -102,6 +85,18 @@
       background: linear-gradient(to right, #24c6dc, #514a9d);
       transform: scale(1.05);
     }
+
+    .video-section {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .custom-video {
+      width: 300px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    }
   </style>
 </head>
 <body>
@@ -118,6 +113,12 @@
   <a href="contact.html">Contact</a>
 </nav>
 
+<!-- ⬆️ LINK SECTION MOVED ABOVE VIDEOS -->
+<section class="secondary-nav">
+  <a href="page1-intro.html">📘 Introduction</a>
+  <a href="page2-lab-setup.html">🧪 Lab Setup</a>
+</section>
+
 <section class="video-section">
   <video class="custom-video" autoplay muted loop playsinline>
     <source src="video1.mp4" type="video/mp4" />
@@ -131,13 +132,6 @@
     <source src="video3.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-</section>
-
-<section class="contact-section">
-  <div class="secondary-nav">
-    <a href="page1-intro.html">📘 Introduction</a>
-    <a href="page2-lab-setup.html">🧪 Lab Setup</a>
-  </div>
 </section>
 
 </body>
