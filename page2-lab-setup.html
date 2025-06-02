@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Setup - Tech.Ubaid</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="animated-heading">Lab Setup for Ethical Hacking</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Step 1: Install Termux</h2>
+      <p>Termux ko Play Store se install mat karo. Latest aur secure version ke liye <a href="https://f-droid.org/packages/com.termux/" target="_blank">F-Droid</a> se download karo.</p>
+      
+      <h2>Step 2: Basic Termux Commands</h2>
+      <ul>
+        <li><code>pkg update && pkg upgrade</code> - System update karo</li>
+        <li><code>pkg install git</code> - Git install karo</li>
+        <li><code>pkg install python</code> - Python install karo</li>
+        <li><code>pkg install nano</code> - Nano text editor install karo</li>
+        <li><code>termux-setup-storage</code> - Storage access enable karo</li>
+      </ul>
+
+      <h2>Step 3: Clone Your GitHub Repo</h2>
+      <pre>
+git clone https://github.com/ubaid098321/tech.ubaid.git
+cd tech.ubaid
+      </pre>
+
+      <h2>Step 4: Run Your Website Locally</h2>
+      <p>Simple Python HTTP server se apni website ko local host pe run karo:</p>
+      <pre>
+python -m http.server 8080
+      </pre>
+      <p>Phir browser me jaake <code>http://localhost:8080</code> open karo.</p>
+
+      <h2>Step 5: Install Useful Tools</h2>
+      <ul>
+        <li><code>pkg install nmap</code> - Network scanner</li>
+        <li><code>pkg install openssh</code> - SSH tools</li>
+        <li><code>pkg install curl</code> - Command line HTTP requests</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech.Ubaid. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
