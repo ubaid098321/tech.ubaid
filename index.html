@@ -4,70 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tech.Ubaid</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Russo+One&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #fdfdfd;
+      font-family: 'Russo One', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
     }
 
     header {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
     }
 
     .profile-photo {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #444;
+      border: 5px solid #0ff;
+      box-shadow: 0 0 20px #0ff;
     }
 
     .animated-heading {
-      font-size: 2.5rem;
-      color: #333;
+      font-size: 2.8rem;
+      color: #0ff;
+      margin-top: 15px;
+      text-shadow: 2px 2px 5px #000;
     }
 
     .navbar {
       display: flex;
       justify-content: center;
-      background-color: #111;
-      padding: 10px;
+      background-color: #000;
+      padding: 12px;
     }
 
     .navbar a {
-      color: white;
-      margin: 0 15px;
+      color: #00ffff;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 10px 16px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      border: 2px solid transparent;
     }
 
     .navbar a:hover {
-      text-decoration: underline;
+      background-color: #00ffff;
+      color: #000;
+      border-color: #00ffff;
+      transform: scale(1.1);
     }
 
     .video-section {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
     }
 
     .custom-video {
       width: 300px;
-      height: auto;
       margin: 10px;
-      border-radius: 12px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.4);
     }
 
     .contact-section {
       text-align: center;
-      padding: 20px;
+      padding: 40px;
     }
 
     .secondary-nav {
-      max-width: 600px;
-      margin: 40px auto;
+      max-width: 700px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -75,24 +86,21 @@
 
     .secondary-nav a {
       display: block;
-      padding: 18px;
+      padding: 20px;
       text-align: center;
-      background: linear-gradient(135deg, #e0f7ff, #ffffff);
-      color: #0a3d62;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      color: #fff;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      border-radius: 14px;
-      border: 2px solid #d0ecff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
       transition: all 0.3s ease-in-out;
     }
 
     .secondary-nav a:hover {
-      background: linear-gradient(135deg, #d3eaff, #b0d4ff);
-      color: #064273;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      transform: translateY(-3px);
+      background: linear-gradient(to right, #24c6dc, #514a9d);
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -111,15 +119,15 @@
 </nav>
 
 <section class="video-section">
-  <video class="custom-video" controls>
+  <video class="custom-video" autoplay muted loop playsinline>
     <source src="video1.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <video class="custom-video" controls>
+  <video class="custom-video" autoplay muted loop playsinline>
     <source src="video2.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <video class="custom-video" controls>
+  <video class="custom-video" autoplay muted loop playsinline>
     <source src="video3.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
@@ -127,8 +135,8 @@
 
 <section class="contact-section">
   <div class="secondary-nav">
-    <a href="page1-intro.html">Introduction</a>
-    <a href="page2-lab-setup.html">Lab Setup</a>
+    <a href="page1-intro.html">📘 Introduction</a>
+    <a href="page2-lab-setup.html">🧪 Lab Setup</a>
   </div>
 </section>
 
