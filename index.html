@@ -62,7 +62,7 @@
       box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     }
 
-    /* Updated styles for secondary-nav links */
+    /* Updated styles for secondary-nav links with animated gradient background */
     .secondary-nav {
       max-width: 700px;
       margin: 30px auto;
@@ -75,33 +75,45 @@
       display: block;
       padding: 18px;
       text-align: center;
-      background: linear-gradient(135deg, #ffe3f2, #ffd6e8);
-      color: #b60057;  /* bright pink/magenta */
+      background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+      background-size: 600% 600%;
+      color: #fff;
       text-decoration: none;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 1.3rem;
-      font-family: 'Poppins', cursive;
+      font-family: 'Poppins', sans-serif;
       letter-spacing: 1.2px;
       border-radius: 18px;
-      border: 3px solid #ff80aa;
+      border: 2px solid #3e3eaa;
       box-shadow:
-        0 0 8px #ff80aa,
-        inset 0 0 10px #ff4d94;
+        0 4px 15px rgba(38, 32, 98, 0.6);
       text-shadow:
-        1px 1px 2px #9b004c,
-        0 0 10px #ff66b2;
+        1px 1px 3px rgba(0,0,0,0.4);
+      animation: gradientShift 8s ease infinite;
       transition: all 0.4s ease-in-out;
     }
 
     .secondary-nav a:hover {
-      background: linear-gradient(135deg, #ff80aa, #ff4d94);
-      color: #fff;
+      background-position: 100% 50%;
       box-shadow:
-        0 0 15px #ff4d94,
-        inset 0 0 15px #ff66b2;
-      transform: translateY(-5px);
+        0 0 15px #5a4ee8,
+        0 0 30px #4a3fc5;
+      transform: translateY(-5px) scale(1.05);
       text-shadow:
-        0 0 12px #fff;
+        0 0 10px #fff;
+      border-color: #5245d6;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     .video-section {
@@ -137,7 +149,7 @@
     <a href="ethical-hacking.html">Ethical Hacking</a>
   </div>
 
-  <!-- Decorative Section Links with updated style -->
+  <!-- Decorative Section Links with updated animated style -->
   <div class="secondary-nav">
     <a href="page1-intro.html">Introduction to Ethical Hacking</a>
     <a href="page2-lab-setup.html">Lab Setup & Tools</a>
@@ -158,5 +170,4 @@
   </div>
 
 </body>
-</html>9
-
+</html>
