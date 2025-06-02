@@ -62,6 +62,36 @@
       box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     }
 
+    .secondary-nav {
+      max-width: 700px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .secondary-nav a {
+      display: block;
+      padding: 18px;
+      text-align: center;
+      background: linear-gradient(135deg, #fddde6, #d0eaff);
+      color: #072f4f;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-radius: 14px;
+      border: 2px solid #d0ecff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .secondary-nav a:hover {
+      background: linear-gradient(135deg, #d3eaff, #b0d4ff);
+      color: #064273;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
+    }
+
     .video-section {
       text-align: center;
       padding: 20px;
@@ -87,7 +117,7 @@
     <h1 class="animated-heading">Welcome to Tech.Ubaid</h1>
   </header>
 
-  <!-- 🔹 Stylish Navigation Section -->
+  <!-- 🔹 Main Navigation -->
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -95,7 +125,14 @@
     <a href="ethical-hacking.html">Ethical Hacking</a>
   </div>
 
-  <!-- 🔸 Video Section -->
+  <!-- 🔸 Decorative Section Links -->
+  <div class="secondary-nav">
+    <a href="page1-intro.html">Introduction to Ethical Hacking</a>
+    <a href="page2-lab-setup.html">Lab Setup & Tools</a>
+    <a href="docs">More Guides & Resources</a>
+  </div>
+
+  <!-- 🎥 Video Section -->
   <div class="video-section">
     <video class="custom-video" autoplay muted loop>
       <source src="video1.mp4" type="video/mp4">
