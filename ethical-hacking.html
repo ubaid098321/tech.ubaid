@@ -2,84 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Complete Ethical Hacking Course - tech.ubaid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethical Hacking Roadmap</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="ethical-hacking.html" style="color:#f0c040;">Ethical Hacking</a>
-    <a href="web-development.html">Web Development</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
   <header>
-    <h1>Complete Ethical Hacking Course</h1>
-    <p>Learn ethical hacking step-by-step from beginner to advanced.</p>
+    <h1>Ethical Hacking Full Roadmap</h1>
+    <p>From Beginner to Pro Level</p>
   </header>
 
-  <section>
-    <h2>Introduction</h2>
-    <p>Ethical hacking is the practice of legally breaking into computers and devices to test an organization's defenses. It helps identify vulnerabilities before malicious hackers can exploit them.</p>
-  </section>
+  <main>
+    <section>
+      <h2>🔰 1. Basics & Foundations</h2>
+      <ul>
+        <li>What is Ethical Hacking?</li>
+        <li>Types of Hackers (White Hat, Black Hat, Grey Hat)</li>
+        <li>Legal Aspects of Hacking</li>
+        <li>Basic Networking Concepts (IP, DNS, DHCP, MAC)</li>
+        <li>Understanding the Internet & How Websites Work</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>1. Basics of Networking & Operating Systems</h2>
-    <p>Learn how networks operate, common protocols like TCP/IP, HTTP, DNS, and how operating systems (Windows, Linux) work, which is crucial for hacking.</p>
-  </section>
+    <section>
+      <h2>💻 2. Setting Up the Lab</h2>
+      <ul>
+        <li>Install Termux / Kali Linux / Parrot OS</li>
+        <li>Install VirtualBox or VMware</li>
+        <li>Setup Kali Linux in VM</li>
+        <li>Basic Linux Commands Practice</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>2. Common Vulnerabilities & Attacks</h2>
-    <ul>
-      <li><b>SQL Injection:</b> Exploiting vulnerabilities in database queries.</li>
-      <li><b>Cross-Site Scripting (XSS):</b> Injecting malicious scripts into websites.</li>
-      <li><b>Phishing:</b> Tricking users to reveal sensitive info.</li>
-      <li><b>Brute Force Attacks:</b> Trying many passwords until the right one is found.</li>
-      <li><b>Man-in-the-Middle:</b> Intercepting communication between two parties.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🛠️ 3. Tools & Scripting</h2>
+      <ul>
+        <li>Learn Bash, Python Basics</li>
+        <li>Familiarity with Nmap, Wireshark, Burpsuite</li>
+        <li>Using Metasploit Framework</li>
+        <li>Packet Sniffing & Analysis</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>3. Setting Up Your Lab</h2>
-    <p>Use Kali Linux, a penetration testing distro, install VirtualBox or VMware to run multiple virtual machines for testing.</p>
-  </section>
+    <section>
+      <h2>🔍 4. Information Gathering (Recon)</h2>
+      <ul>
+        <li>Passive Recon: whois, nslookup, theHarvester</li>
+        <li>Active Recon: Nmap, Nikto, Shodan</li>
+        <li>Website Footprinting</li>
+        <li>Google Dorking</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>4. Tools of the Trade</h2>
-    <ul>
-      <li><b>Nmap:</b> Network scanner to find open ports.</li>
-      <li><b>Wireshark:</b> Packet analyzer to monitor traffic.</li>
-      <li><b>Metasploit:</b> Exploit development and testing framework.</li>
-      <li><b>Burp Suite:</b> Web vulnerability scanner.</li>
-      <li><b>John the Ripper:</b> Password cracking tool.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🔓 5. Vulnerability Analysis</h2>
+      <ul>
+        <li>Vulnerability Scanning (Nessus, OpenVAS)</li>
+        <li>Identify Weaknesses in Websites/Servers</li>
+        <li>CVE & Exploit DB Research</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>5. Programming for Hackers</h2>
-    <p>Learn scripting with Python, Bash scripting, and basics of C for writing exploits and automation.</p>
-  </section>
+    <section>
+      <h2>💣 6. Exploitation & Gaining Access</h2>
+      <ul>
+        <li>Metasploit Exploits</li>
+        <li>Manual Exploitation (SQLi, XSS, LFI/RFI)</li>
+        <li>Password Cracking (Hydra, John the Ripper)</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>6. Capture The Flag (CTF) Challenges</h2>
-    <p>Practice hacking in a legal environment with online platforms like Hack The Box, TryHackMe, OverTheWire.</p>
-  </section>
+    <section>
+      <h2>📡 7. Post Exploitation</h2>
+      <ul>
+        <li>Maintaining Access (Backdoors, Netcat)</li>
+        <li>Covering Tracks (Log Cleaning)</li>
+        <li>Privilege Escalation Techniques</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>7. Certifications</h2>
-    <p>CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional) are widely recognized.</p>
-  </section>
+    <section>
+      <h2>🧠 8. Real-World Practice</h2>
+      <ul>
+        <li>CTF Platforms: TryHackMe, HackTheBox, RootMe</li>
+        <li>Bug Bounty Platforms: HackerOne, BugCrowd</li>
+        <li>Write Reports & Learn Responsible Disclosure</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>8. Legal and Ethical Responsibilities</h2>
-    <p>Always have explicit permission before testing. Unauthorized hacking is illegal and punishable by law.</p>
-  </section>
+    <section>
+      <h2>🚀 9. Advance Skills</h2>
+      <ul>
+        <li>Mobile Hacking (Android, iOS)</li>
+        <li>Wi-Fi Hacking (Aircrack-ng, Wifite)</li>
+        <li>Reverse Engineering & Malware Analysis</li>
+        <li>Red Teaming vs Blue Teaming</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎯 10. Certifications (Optional but Powerful)</h2>
+      <ul>
+        <li>CEH – Certified Ethical Hacker</li>
+        <li>OSCP – Offensive Security Certified Professional</li>
+        <li>eJPT, CompTIA Security+, PNPT, etc.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>✅ Final Advice:</h3>
+      <p>Practice daily, stay legal, contribute to open-source, and never stop learning!</p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 tech.ubaid | Ethical Hacker & Web Developer
+    <p>Made with ❤️ by Ubaid</p>
   </footer>
 </body>
 </html>
